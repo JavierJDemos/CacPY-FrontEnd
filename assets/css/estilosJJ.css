@@ -50,7 +50,8 @@ header {
     }
 
 nav {
-    background-color: #3d7508;
+    /*background-color: #3d7508;*/
+    background:rgb(31, 56, 34);
     font-weight: 700;
     padding: 10px;
     width: 100%;
@@ -368,7 +369,8 @@ footer section {
 }
 
 .footer-nav {
-    background-color: #3d7508;
+    /*background-color: #3d7508;*/
+    background:rgb(31, 56, 34);
     font-weight: 700;
     padding: 10px;
     width: 100%;
