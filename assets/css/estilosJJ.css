@@ -213,7 +213,7 @@ main iframe {
 
 .svg-inline-contactos {
     display: inline-block;
-    font-size: 1em;
+    font-size: inherit;
     height: 1em;
     overflow: visible;
     vertical-align: -.125em
@@ -307,7 +307,7 @@ footer section {
     
 #whatsapp-icon img {
     
-    width: 80px; /* Ajusta el tamaño del icono según tus necesidades */
+    width: 70px; /* Ajusta el tamaño del icono según tus necesidades */
     
     height: auto;
     
