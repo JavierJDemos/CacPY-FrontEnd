@@ -213,7 +213,7 @@ main iframe {
 
 .svg-inline-contactos {
     display: inline-block;
-    font-size: 1em;
+    font-size: inherit;
     height: 1em;
     overflow: visible;
     vertical-align: -.125em
