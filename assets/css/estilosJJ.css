@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap')
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000*/
+
+
+.nunito-sans-700 {
+    font-family: "Nunito Sans";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+
+.m-plus-rounded-1c-regular {
+    font-family: "M PLUS Rounded 1c";
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    background-color: #dff0f8;
+}
+
+header {
+    background-color: #fff;
+
+    padding: 0 15px 15px 0;
+    
+}
+
+#span1 {
+    font-family: "M PLUS Rounded 1c";
+    font-weight: xx-large;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: end;
+}
+
+#span2 {
+    font-family: "M PLUS Rounded 1c";
+    font-weight: 400;
+    font-style: italic;
+    text-align:
+    }
+
+nav {
+    background-color: #3d7508;
+    font-weight: 700;
+    padding: 10px;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline blue;
+}
+
+body {
+    background-color: #ffffff;
+    color: #3d7508;
+}
+
+p {
+    text-align: center;
+    color: black;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 10px 10px 15px 15px;
+
+}
+
+main h3 {
+    color: #3d7508;
+    text-align: center;
+}
+
+main section {
+    
+    padding: 15px 15px 0 0 ;   
+}
+
+main section h4 {
+    text-align: center;
+    padding: 5px 0;
+}
+
+#mapa  {
+    text-align: center;
+    
+}
+main iframe {
+    border: 0;
+    padding: 10px;
+    
+}
+
+
+#contacto {
+    padding: 20px;
+    text-align: center;
+}
+
+#contacto form {
+    padding: 20px;
+    text-align: center;}
+
+
+
+footer {
+    background-color: #dff0f8;
+    padding: 15px;
+    text-align: center;
+}
+
+footer section {
+    background-color: #dff0f8;
+    padding: 15px 15px 0 0 ;   
+}
+
+/* terminos.html - Terminos y Condiciones */
+
+.terminos {
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+
+.terminos span {
+    color: #3d7508;
+    font-weight: bold;
+    padding : 10px;
+}
+
+.terminos p {
+    color:black ;
+    text-align: justify;
+    padding : 10px;
+}
+
+  
+/* Footer Traido*/  
+
+.social-link {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 25px;
+    padding: 10px 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 1em;
+    
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em
+}
+
+.fa-3x {
+    font-size: 3em
+}
+

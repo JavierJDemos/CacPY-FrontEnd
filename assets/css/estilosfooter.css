@@ -1,0 +1,49 @@
+
+
+
+.text-center {
+    text-align: center
+}
+
+.p-top {
+    padding-top: 20px !important
+}
+
+.p-bottom {
+    padding-bottom: 20px !important
+}
+
+.m-top-half {
+    margin-top: 10px !important
+}
+
+.m-bottom-half {
+    margin-bottom: 10px !important
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em
+}
+
+.fa-3x {
+    font-size: 3em
+}
+
+.row-fluid [class*=span] {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 20px;
+    margin-left: 2.127659574468085%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.m-bottom {
+    margin-bottom: 20px !important
+}
