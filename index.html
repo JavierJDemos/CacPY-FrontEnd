@@ -134,23 +134,30 @@
                     <a href="mailto:juansemar@yahoo.com.ar">juansemar@yahoo.com.ar</a>
                 </div>
                 <br>
-                <div>
-                    <span>Enviarnos tu mensaje a través de este formulario.</span>
-                    <form method="post" action="./assets/php/form.php">
+                <div  class="form-wrapper">
+                    <form action="#" method="post">
                         <!-- <form action="php/mail.php" method="POST"> -->
-                        <div>
-                            <input type="text" name="name" placeholder="Nombre"><br>
-                            <input type="text" name="last" placeholder="Apellido"><br>
-                            <input type="email" name="email" placeholder="Email"><br>
-                            <input type="tel" name="phone" placeholder="Teléfono" pattern="[0-9]{10}">
-                            <input type="radio" id="celular" name="tipo" value="Celular">
-                            <label for="celular">celular</label>
-                            <input type="radio" id="fijo" name="tipo"  value="Fijo">
-                            <label for="fijo">fijo</label><br>
-                            <textarea name="message" placeholder="Mensaje" rows="4"></textarea><br>
+                        <span>Enviarnos tu mensaje a través de este formulario.</span>
+                        
+                        <div class="form-control">
+                            <input type="text" name="name" placeholder="Nombre" required><br>
+                            <input type="text" name="last" placeholder="Apellido" required><br>
+                            <input type="email" name="email" placeholder="Email" required><br>
+                        </div>
+                        <div class="form-tel">
+                            <input type="tel" name="phone" placeholder="Teléfono" pattern="[0-9]{10}" required>
+                            <div class="">
+                                <label for="celular">celular</label>
+                                <input type="radio" id="celular" name="tipo" value="Celular" checked>
+                                <label for="fijo">fijo</label>
+                                <input type="radio" id="fijo" name="tipo" value="Fijo"><br>
+                            </div>
+                        </div>
+                        <div class="form-botones">
+                            <textarea name="message" placeholder="Mensaje" rows="4" required></textarea><br>
                             <input type="submit" value="Enviar mensaje">
-                            <!-- <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"> -->
-                            <input type="reset" value="Reset">
+                            <!-- <input type="image" src="./assets/img/img_submit.gif" alt="Submit" width="200"> -->
+                            <input type="reset" value="Cancelar">
                         </div>
                     </form>
                 </div>
@@ -188,6 +195,7 @@
     </main>
     <section>
         <nav class="footer-nav">
+            <a href="index.html">Inicio</a>
             <a href="#contacto">Contacto</a>
             <a href="#quienes">Quiénes somos</a>
             <a href="terminos.html">Terminos y Condiciones</a>
@@ -199,39 +207,23 @@
         <section>
             <h5>Aceptamos estos medios de pago</h5>
             <div>
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png"
+                <img src="./assets/img/visa@2x.png"
                 alt="visa" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png"
+                <img src="./assets/img/mastercard@2x.png"
                         alt="mastercard" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png"
+                <img src="./assets/img/amex@2x.png"
                         alt="amex" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png"
+                <img src="./assets/img/diners@2x.png"
                         alt="diners" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png"
-                        alt="ar_banelco" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png"
-                        alt="ar_cabal" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png"
-                        alt="ar_tarjeta-naranja" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png"
-                        alt="ar_tarjeta-shopping" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png"
-                        alt="mercadopago" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/other@2x.png"
-                        alt="other" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png"
+                <img src="./assets/img/argencard@2x.png"
                         alt="ar_argencard" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png"
-                        alt="ar_cencosud" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/pagofacil@2x.png"
-                        alt="pagofacil" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/rapipago@2x.png"
-                        alt="rapipago" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabaldebit@2x.png"
-                        alt="ar_cabaldebit" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/maestro@2x.png"
+                <img src="./assets/img/mercadopago@2x.png"
+                        alt="mercadopago" width="48" height="30">
+                <img src="./assets/img/other@2x.png"
+                        alt="other" width="48" height="30">
+                <img src="./assets/img/maestro@2x.png"
                         alt="maestro" width="48" height="30">
-                <img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visadebit@2x.png"
+                <img src="./assets/img/visadebit@2x.png"
                         alt="visadebit" width="48" height="30">
             </div>
         </section>

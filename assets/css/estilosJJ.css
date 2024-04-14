@@ -225,6 +225,136 @@ main iframe {
     text-align: center;}
 
 
+/* Form contacto */
+.form-wrapper {
+    display: flex;
+    max-width: 50vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+    border-radius: 5px;
+    padding: 0px 40px 10px;
+    background:rgb(31, 56, 34);
+}
+
+.form-wrapper span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form-wrapper h4 {
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+.form-wrapper form {
+    margin: 10px 0 10px;
+}
+
+form .form-control {
+    /*height: 50px;*/
+    position: relative;
+    margin-top: 10px;
+}
+
+.form-control input {
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid white;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
+    margin-top: 10px;
+    content: 10px;
+}
+
+.form-control label {
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+}
+
+form .form-tel {
+    display:flex;
+    margin-top: 10px;
+}
+
+.form-tel input {
+    width: 50%;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid white;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0px 20px 0px 0px;
+} 
+
+.form-tel label {
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+}
+
+.form-tel radio {
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+    padding: 10px;
+}
+
+
+.form-botones textarea {
+    width: 100%;
+    /*pointer-events: none;*/
+    color: #8c8c8c;
+    /*transition: all 0.1s ease;*/
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.form-botones input {
+    width: 50%;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid white;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.form-botones input:hover {
+    background-color: #036f19;
+    color: white;
+}
+
+@media (max-width: 740px) {
+    body::before {
+        display: none;
+    }
+
+    .form-wrapper {
+        padding: auto;
+        margin-top: 10px;
+        width: 100%;
+        top: 50%;
+    }
+    
+    .form-wrapper form {
+        margin: 5px 0 65px;
+    }
+}
+
+
+
+
+
+
+
 
 footer {
     background-color: #dff0f8;
