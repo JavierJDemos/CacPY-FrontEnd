@@ -432,6 +432,10 @@ footer section {
     padding: 15px 15px 0 0 ;
 }
 
+footer section div img {
+    border-radius: 25% ;
+}
+
 .footer-nav {
     /* background-color: #3d7508;  Color del logo */
     background:rgb(45,139,3);
