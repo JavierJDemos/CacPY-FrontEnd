@@ -83,7 +83,7 @@ main {
 
 }
 
-main h3 {
+main h2, h3 {
     color: #3d7508;
     text-align: center;
 }
@@ -96,6 +96,12 @@ main section {
 main section h4 {
     text-align: center;
     padding: 5px 0;
+}
+
+#quienes_somos p {
+    text-align: left;
+    padding: 5px 0;
+    margin: auto 30px auto 30px;
 }
 
 #mapa  {
