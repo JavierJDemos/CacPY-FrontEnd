@@ -23,7 +23,7 @@
 
 /* Estilos generales */
 body {
-    background-color: #dff0f8;
+    background-color: #dff8f4;
     color: #3d7508;
 }
 
@@ -448,13 +448,13 @@ form .form-tel {
 /*---------------------------------------------------------------*/
 /*FOOTER*/
 footer {
-    background-color: #dff0f8;
+    background-color: #aaff3c80;
     padding: 5px;
     text-align: center;
 }
 
 footer section {
-    background-color: #dff0f8;
+    */background-color: #dff0f8;*/
     padding: 15px 15px 0 0 ;
 }
 
