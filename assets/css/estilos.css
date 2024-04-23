@@ -333,7 +333,7 @@ form .form-tel {
 
 .form-control input::placeholder, .form-tel input::placeholder {
     /*color: rgb(34, 105, 2);*/
-    color: red;
+    color: rgb(5, 27, 2);
 }
 
 .form-tel label {
