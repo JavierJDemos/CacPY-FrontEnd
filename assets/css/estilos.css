@@ -1,13 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/*@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap')
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 200 to 1000*/
-
-
+/*Fuentes externas -- Class*/
 .nunito-sans-700 {
     font-family: "Nunito Sans";
     font-optical-sizing: auto;
@@ -16,45 +13,84 @@
     font-variation-settings:
       "wdth" 100,
       "YTLC" 500;
-  }
+}
 
 .m-plus-rounded-1c-regular {
     font-family: "M PLUS Rounded 1c";
     font-weight: 400;
     font-style: normal;
-  }
+}
 
+/* Estilos generales */
 body {
     background-color: #dff0f8;
+    color: #3d7508;
 }
 
+p {
+    text-align: center;
+    color: black;
+}
+
+/*---------------------------------------------------------------*/
+/* Estilos del header */
 header {
     background-color: #fff;
-
-    padding: 0 15px 15px 0;
-    
+    padding: 0 15px 5px 0;
 }
 
-#span1 {
+/* Estilos del container-header */
+.container-header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+/*Div logo*/
+#logo {
+    display: inline-block;
+    padding: 10px 10px 0px 0px;
+}
+
+/*Div Texto de la Marca*/
+.flex-titulo {
+    line-height: 100%;
+    flex: 1;
+    padding: 10px 10px 0px 0px;
+}
+
+.span1 {
     font-family: "M PLUS Rounded 1c";
     font-weight: xx-large;
     font-style: normal;
     font-weight: 800;
     font-size: 3rem;
+    
 }
 
-#span2 {
+.span2 {
     font-family: "M PLUS Rounded 1c";
     font-weight: 400;
     font-style: italic;
+    white-space: nowrap;
     }
 
+
+.texto {
+    line-height: 80%;
+    margin: 0; /* asegurar que no haya margen entre el texto y el borde inferior */
+}
+
+/*Div Estilos del nav */
 nav {
-    /*background-color: #3d7508;*/
-    background:rgb(31, 56, 34);
+    display: inline-block;
+    background:rgb(45,139,3);
     font-weight: 700;
     padding: 10px;
-    width: 100%;
+    
+    text-align: center;
+    border-radius: 10px;
+    
 }
 
 nav a {
@@ -67,25 +103,12 @@ nav a:hover {
     text-decoration: underline blue;
 }
 
-body {
-    background-color: #ffffff;
-    color: #3d7508;
-}
-
-p {
-    text-align: center;
-    color: black;
-}
-
+/*---------------------------------------------------------------*/
+/*MAIN*/
+/*Cuerpo Principal*/
 main {
     background-color: #ffffff;
-    padding: 10px 10px 15px 15px;
-
-}
-
-main h3 {
-    color: #3d7508;
-    text-align: center;
+    /*padding: 10px 10px 0px 0px ;*/
 }
 
 main section {
@@ -93,21 +116,28 @@ main section {
     padding: 15px 15px 0 0 ;   
 }
 
-main section h4 {
+main section h2 {
     text-align: center;
     padding: 5px 0;
 }
 
-#mapa  {
-    text-align: center;
-    
-}
-main iframe {
-    border: 0;
-    padding: 10px;
-    
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Barra de separación*/ 
+.maintopmargin{
+    height: 10px;
+    background-color:rgb(45,139,3);
+    margin: 0px 0px 15px 0px;
 }
 
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Titulo Cuerpo Principal*/
+main h1 {
+    color: #3d7508;
+    text-align: center;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Sección de Productos*/
 #productos {
     text-decoration: none;
 }
@@ -200,18 +230,27 @@ main iframe {
   to {opacity: 1}
 }
 
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Sección de Donde Estamos*/
 
+#mapa  {
+    text-align: center;
+    
+}
+main iframe {
+    border: 0;
+    padding: 10px;
+    
+}
 
-
-
-
-
-
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Sección de Contacto*/
 #contacto {
     padding: 20px;
     text-align: center;
 }
 
+/*Íconos Telefono y Correo*/
 .svg-inline-contactos {
     display: inline-block;
     font-size: inherit;
@@ -220,13 +259,11 @@ main iframe {
     vertical-align: -.125em
 }
 
-
+/*Form contacto
 #contacto form {
     padding: 20px;
-    text-align: center;}
+    text-align: center;}*/
 
-
-/* Form contacto */
 .form-wrapper {
     display: flex;
     max-width: 50vw;
@@ -236,7 +273,8 @@ main iframe {
     margin: auto;
     border-radius: 5px;
     padding: 0px 40px 10px;
-    background:rgb(31, 56, 34);
+    /*background:rgb(31, 56, 34);*/
+    background:rgb(45,139,3);
 }
 
 .form-wrapper span {
@@ -262,11 +300,11 @@ form .form-control {
 
 .form-control input {
     width: 100%;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.5);
     border: 1px solid white;
     outline: none;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
     padding: 5px;
     margin-top: 10px;
     content: 10px;
@@ -285,17 +323,22 @@ form .form-tel {
 
 .form-tel input {
     width: 50%;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.5);
     border: 1px solid white;
     outline: none;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
     margin: 0px 20px 0px 0px;
 } 
 
+.form-control input::placeholder, .form-tel input::placeholder {
+    /*color: rgb(34, 105, 2);*/
+    color: red;
+}
+
 .form-tel label {
     pointer-events: none;
-    color: #8c8c8c;
+    color: #ffffff;
     transition: all 0.1s ease;
 }
 
@@ -305,7 +348,6 @@ form .form-tel {
     transition: all 0.1s ease;
     padding: 10px;
 }
-
 
 .form-botones textarea {
     width: 100%;
@@ -350,56 +392,8 @@ form .form-tel {
     }
 }
 
-
-
-
-
-
-
-
-footer {
-    background-color: #dff0f8;
-    padding: 5px;
-    text-align: center;
-}
-
-footer section {
-    background-color: #dff0f8;
-    padding: 15px 15px 0 0 ;
-}
-
-.footer-nav {
-    /*background-color: #3d7508;*/
-    background:rgb(31, 56, 34);
-    font-weight: 700;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-}
-/* terminos.html - Terminos y Condiciones */
-
-.terminos {
-    background-color: #ffffff;
-    padding: 20px;
-    font-family: 'Nunito Sans', sans-serif;
-    
-}
-
-
-.terminos span {
-    color: #3d7508;
-    font-weight: bold;
-    padding : 10px;
-}
-
-.terminos p {
-    color:black ;
-    text-align: justify;
-    padding : 10px;
-}
-
-  
-/* Footer Traido - iconos, tarjetas y redes*/  
+/*---------------------------------------------------------------*/
+/* Nuestras redes sociales*/
 
 .social-link {
     display: inline-block;
@@ -425,6 +419,59 @@ footer section {
     font-size: 3em
 }
 
+/*---------------------------------------------------------------*/
+/*FOOTER*/
+footer {
+    background-color: #dff0f8;
+    padding: 5px;
+    text-align: center;
+}
+
+footer section {
+    background-color: #dff0f8;
+    padding: 15px 15px 0 0 ;
+}
+
+footer section div img {
+    border-radius: 25% ;
+}
+
+.footer-nav {
+    /* background-color: #3d7508;  Color del logo */
+    background:rgb(45,139,3);
+    font-weight: 700;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*---------------------------------------------------------------*/
+/* terminos.html - Terminos y Condiciones */
+
+.terminos {
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+
+.terminos span {
+    color: #3d7508;
+    font-weight: bold;
+    padding : 10px;
+}
+
+.terminos p {
+    color:black ;
+    text-align: justify;
+    padding : 10px;
+}
+
+  
+
+/*---------------------------------------------------------------*/
+/*ïcono WHATSAPP Flotante*/
 #whatsapp-icon {
 
     position: fixed;
