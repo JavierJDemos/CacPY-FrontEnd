@@ -23,7 +23,7 @@
 
 /* Estilos generales */
 body {
-    background-color: #dff0f8;
+    background-color: #dff8f4;
     color: #3d7508;
 }
 
@@ -32,6 +32,9 @@ p {
     color: black;
 }
 
+hr {
+    background:rgb(45,139,3);
+}
 /*---------------------------------------------------------------*/
 /* Estilos del header */
 header {
@@ -101,6 +104,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline blue;
+    color: #ffff00;
 }
 
 /*---------------------------------------------------------------*/
@@ -116,7 +120,7 @@ main section {
     padding: 15px 15px 0 0 ;   
 }
 
-main section h2 {
+main section h2, main section h3 {
     text-align: center;
     padding: 5px 0;
 }
@@ -231,6 +235,29 @@ main h1 {
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Quienes Somos*/
+
+.contenedor-quienes {
+    display: grid;
+    grid-template-columns: 15% 70% 15%; /* Define los tamaños de las columnas */
+    grid-gap: 10px; /* Espacio entre las celdas */
+    border: 0px solid black; /* Borde para visualización */
+    justify-content: center;
+  }
+  
+  .item-quienes {
+    border: 0px solid black; /* Borde para visualización */
+    padding: 10px; /* Espacio interno */
+  }
+  
+  /* Estilos adicionales para hacer más visible */
+  .item-quienes:nth-child(odd) {
+    background-color: rgb(255, 255, 255); /* Fondo para visualización */
+  }
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*Sección de Donde Estamos*/
 
 #mapa  {
@@ -238,7 +265,7 @@ main h1 {
     
 }
 main iframe {
-    border: 0;
+    border: 10px solid rgb(45,139,3);
     padding: 10px;
     
 }
@@ -333,7 +360,7 @@ form .form-tel {
 
 .form-control input::placeholder, .form-tel input::placeholder {
     /*color: rgb(34, 105, 2);*/
-    color: red;
+    color: rgb(5, 27, 2); /* Color texto input verdes*/
 }
 
 .form-tel label {
@@ -422,13 +449,13 @@ form .form-tel {
 /*---------------------------------------------------------------*/
 /*FOOTER*/
 footer {
-    background-color: #dff0f8;
+    background-color: #aaff3c80;
     padding: 5px;
     text-align: center;
 }
 
 footer section {
-    background-color: #dff0f8;
+    /*background-color: #dff0f8;*/
     padding: 15px 15px 0 0 ;
 }
 
@@ -493,3 +520,31 @@ footer section div img {
     border-radius: 25%; /* Hace que el icono tenga forma circular */
     
     }
+
+/*---------------------------------------------------------------*/
+/*hojaR.html*/
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+
+
+.grid-productos {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'menu main main main main right';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-productos > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
