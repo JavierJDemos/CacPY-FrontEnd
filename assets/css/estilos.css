@@ -104,6 +104,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline blue;
+    color: #ffff00;
 }
 
 /*---------------------------------------------------------------*/
@@ -519,3 +520,31 @@ footer section div img {
     border-radius: 25%; /* Hace que el icono tenga forma circular */
     
     }
+
+/*---------------------------------------------------------------*/
+/*hojaR.html*/
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+
+
+.grid-productos {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'menu main main main main right';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-productos > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
