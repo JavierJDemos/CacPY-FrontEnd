@@ -41,16 +41,11 @@
         <div class="maintopmargin">
             
         </div>
-        <h1>Renovamos electrodomésticos cuidando el planeta</h1>
-
-             
-
+        <div>
+            <h1>Renovamos electrodomésticos cuidando el planeta</h1>
+        </div>
         <!-- Productos -->
         <section id="productos">
-            <div>
-            <!--    <h2>Productos</h2> -->
-                
-            </div>
             <!-- Slideshow container -->
             <div class="slideshow-container">
                 
@@ -116,7 +111,7 @@
             <div id="mapa">
                 <iframe title="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.2098590924356!2d-58.543239023892845!3d-34.64940267293786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc86e5d71920b%3A0x8f3cc0a062424ac3!2sGral.%20Guido%201349%2C%20B1704%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1712795005606!5m2!1ses!2sar"
-                width="400" height="300" allowfullscreen="" loading="lazy"
+                width="800" height="600" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             
@@ -162,9 +157,9 @@
                             <input type="tel" name="phone" placeholder="Teléfono" pattern="[0-9]{10}" required>
                             <div class="">
                                 <label for="celular">celular</label>
-                                <input type="radio" id="celular" name="tipo" value="Celular" checked>
+                                <input type="radio" id="celular" name="celular" value="Celular" checked>
                                 <label for="fijo">fijo</label>
-                                <input id="miInput" type="radio" id="fijo" name="tipo" value="Fijo"><br>
+                                <input type="radio" id="fijo" name="fijo" value="Fijo"><br>
                             </div>
                         </div>
                         <div class="form-botones">
@@ -273,23 +268,8 @@
 
 </body>
 
-<script>
-    
-    let slideIndex = 0;
-    showSlides();
 
-    function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-</script>
+<script src="./assets/js/slideshow.js"></script>
 <script src="./assets/js/quienes_somos.js"></script>
 
 </html>
