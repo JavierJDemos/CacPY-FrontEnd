@@ -540,6 +540,7 @@ footer section div img {
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
+    max-width: 100%;
 }
 
 .grid-productos > div {
@@ -548,3 +549,39 @@ footer section div img {
     padding: 20px 0;
     font-size: 30px;
 }
+
+/*Nav productos HojaR*/
+.menuproductos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuproductos ul li {
+    position: relative;
+}
+
+.menuproductos ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menuproductos ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.menuproductos ul ul li {
+    display: block;
+}
+
+.menuproductos ul li:hover > ul {
+    display: block;
+}
+
