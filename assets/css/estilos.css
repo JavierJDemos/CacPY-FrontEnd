@@ -334,6 +334,23 @@ form .form-control {
     margin-top: 10px;
 }
 
+@media (max-width: 740px) {
+    body::before {
+        display: none;
+    }
+
+    .form-wrapper {
+        padding: auto;
+        margin-top: 10px;
+        width: 100%;
+        top: 50%;
+    }
+
+    .form-wrapper form {
+        margin: 5px 0 65px;
+    }
+}
+
 /*Form contacto
 #contacto form {
     padding: 20px;
