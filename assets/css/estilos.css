@@ -51,10 +51,10 @@ header {
 }
 
 /*Div logo*/
-#logo {
+/*#logo {
     display: inline-block;
     padding: 10px 10px 0px 0px;
-}
+}*/
 
 #logo:hover {
     animation: tilt-n-move-shaking 0.25s infinite;
