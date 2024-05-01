@@ -51,10 +51,10 @@ header {
 }
 
 /*Div logo*/
-#logo {
+/*#logo {
     display: inline-block;
     padding: 10px 10px 0px 0px;
-}
+}*/
 
 /*Div Texto de la Marca*/
 .flex-titulo {
@@ -109,6 +109,9 @@ nav a:hover {
     color: #ffff00;
 }
 
+#qs {
+    white-space: nowrap;
+}
 /*---------------------------------------------------------------*/
 /*MAIN*/
 /*Cuerpo Principal*/
@@ -278,7 +281,7 @@ main h1 {
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*Sección de Donde Estamos*/
 
-#mapa {
+.contenedormapa {
     text-align: center;
 
 }
@@ -410,6 +413,9 @@ footer section div img {
     text-align: center;
 }
 
+#tc {
+    white-space: nowrap;
+}
 
 /*---------------------------------------------------------------*/
 /* terminos.html - Terminos y Condiciones */
@@ -501,3 +507,5 @@ footer section div img {
     padding: 20px 0;
     font-size: 30px;
 }
+
+
