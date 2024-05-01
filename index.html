@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/estilos_form.css">
     <link rel="shortcut icon" href="./assets/img/logo-ST-T.png" type="image/png">
 </head>
 
 <body class="nunito-sans-700">
     <header>
         <div class="container-header">
-            <div >
+            <div id="logo">
                 <a href="index.html"><img src="./assets/img/logo-ST-T.png" height="120" alt="Logo"></a>
             </div>
             <div class="flex-titulo">
@@ -26,12 +27,12 @@
                     <span  class="texto"> e l e c t r o d o m é s t i c o s</span>    
                 </div>
             </div>
-            <div>
+            <div class="flex-nav">
                 <nav>
                     <a href="index.html">Inicio</a>
                     <a href="productos.html">Productos</a>
                     <a href="index.html#contacto">Contacto</a>
-                    <a href="index.html#quienes_somos">Quiénes somos</a>
+                    <a id="qs" href="index.html#quienes_somos">Quiénes somos</a>
                 </nav>
             </div>
         </div>
@@ -42,7 +43,7 @@
             
         </div>
         <div>
-            <h1>Renovamos electrodomésticos cuidando el planeta</h1>
+            <h1>Renovamos electrodomésticos y cuidamos el planeta</h1>
         </div>
         <!-- Productos -->
         <div id="productos">
@@ -108,8 +109,8 @@
         <!-- Dónde estamos -->
         <section id="donde">
             <h2>¿Dónde Estamos?</h2>
-            <div id="mapa">
-                <iframe title="mapa"
+            <div class="contenedormapa">
+                <iframe class="iframemapa" title="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.2098590924356!2d-58.543239023892845!3d-34.64940267293786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc86e5d71920b%3A0x8f3cc0a062424ac3!2sGral.%20Guido%201349%2C%20B1704%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1712795005606!5m2!1ses!2sar"
                 width="800" height="600" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -121,75 +122,91 @@
         </div>
         
 
-        <!-- Contacto -->
+       <!-- Contacto -->
         <section id="contacto">
             <div>
                 <div>
                     <h2>Contáctenos</h2>
                     <br>
-                    <p>Puedes contactarnos a través de los siguientes medios. </p>
+                    <h3>Puede contactarnos a través de los siguientes medios.</h3>
                     <br>
                 </div>
                 <div>
-                    <svg class="svg-inline-contactos"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <svg class="svg-inline-contactos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                         <!-- !Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                        <path d="M0 64C0 28.7 28.7 0 64 0H256c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm64 96v64c0 17.7 14.3 32 32 32H224c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H96c-17.7 0-32 14.3-32 32zM80 352a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm24 56a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm56-56a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm24 56a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm56-56a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm24 56a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM128 48c-8.8 0-16 7.2-16 16s7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H128z"/>
+                        <path
+                            d="M0 64C0 28.7 28.7 0 64 0H256c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm64 96v64c0 17.7 14.3 32 32 32H224c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H96c-17.7 0-32 14.3-32 32zM80 352a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm24 56a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm56-56a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm24 56a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm56-56a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm24 56a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zM128 48c-8.8 0-16 7.2-16 16s7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H128z" />
                     </svg>
-                    <Span>+54 9 11 5517-4331</Span>
-                    <svg  class="svg-inline-contactos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <span><a id="telefono" href="tel:+5491155174331">+54 9 11 5517-4331</a></span>
+                    <svg class="svg-inline-contactos" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <!-- !Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-                        <path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
+                        <path
+                            d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
                     </svg>
                     <a href="mailto:juansemar@yahoo.com.ar">juansemar@yahoo.com.ar</a>
                 </div>
                 <br>
-                <div  class="form-wrapper">
-                    <form action="#" method="post">
-                        <!-- <form action="php/mail.php" method="POST"> -->
-                        <span>Envianos tu mensaje</span>
-                        
-                        <div class="form-control">
-                            <input type="text" name="name" placeholder="Nombre" required><br>
-                            <input type="text" name="last" placeholder="Apellido" required><br>
-                            <input type="email" name="email" placeholder="Email" required><br>
-                        </div>
-                        <div class="form-tel">
-                            <input type="tel" name="phone" placeholder="Teléfono" pattern="[0-9]{10}" required>
-                            <div class="">
-                                <label for="celular">celular</label>
-                                <input type="radio" id="celular" name="celular" value="Celular" checked>
-                                <label for="fijo">fijo</label>
-                                <input type="radio" id="fijo" name="fijo" value="Fijo"><br>
-                            </div>
-                        </div>
-                        <div class="form-botones">
-                            <textarea name="message" placeholder="Mensaje" rows="4" required></textarea><br>
-                            <input type="submit" value="Enviar mensaje">
-                            <!-- <input type="image" src="./assets/img/img_submit.gif" alt="Submit" width="200"> -->
-                            <input type="reset" value="Cancelar">
-                        </div>
+
+                <!-- Formulario de contacto -->
+                <div class="form-wrapper">
+                    <form name="RegForm" onsubmit="return validateForm()">
+                        <h3>Formulario de consulta</h3>
+                        <p>
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="Name" placeholder="Ingrese su nombre completo">
+                            <span id="name-error" class="error-message"></span>
+                        </p>
+                        <p>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="text" id="email" name="EMail" placeholder="Ingrese su email">
+                            <span id="email-error" class="error-message"></span>
+                        </p>
+                        <p>
+                            <label for="tel">Teléfono:</label>
+                            <input type="tel" id="tel" name="Teléfono" placeholder="Ingrese su teléfono">
+                            <span id="tel-error" class="error-message"></span>
+                        </p>
+                        <p>
+                            <label for="comment">Mensaje</label>
+                            <textarea id="comment" name="Comment"></textarea>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="agree" name="Agree">
+                            <label for="agree">He leído y acepto toda la información</label>
+                            <span id="agree-error" class="error-message"></span>
+                        </p>
+                        <br>
+                        <p>
+                            <input type="submit" value="Enviar" name="Submit">
+                            <input type="reset" value="Cancelar" name="Reset">
+                        </p>
                     </form>
                 </div>
+                <!-- Fin form contacto-->
                 <br>
-                <hr>
+                <br>
                 <h2>Nuestras redes Sociales</h2>
-                <div >
-                    <a class="social-link" href="https://instagram.com/xxxxxxx" target="_blank" aria-label="instagram xxxxxxx">
+                <div>
+                    <a class="social-link" href="https://instagram.com/xxxxxxx" target="_blank"
+                        aria-label="instagram xxxxxxx">
                         <svg class="svg-inline--fa fa-3x " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path
                                 d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
                             </path>
                         </svg>
                     </a>
-                    <a  class="social-link" href="https://www.facebook.com/profile.php?id=xxxxxxx" target="_blank" aria-label="facebook xxxxxxx">
+                    <a class="social-link" href="https://www.facebook.com/profile.php?id=xxxxxxx" target="_blank"
+                        aria-label="facebook xxxxxxx">
                         <svg class="svg-inline--fa fa-3x " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512">
                             <path
                                 d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229">
                             </path>
                         </svg>
                     </a>
-                    <a class="social-link" href="https://www.youtube.com/channel/xxxxxxx" target="_blank" aria-label="youtube xxxxxxx">
-                        <svg class="svg-inline--fa fa-3x social-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <a class="social-link" href="https://www.youtube.com/channel/xxxxxxx" target="_blank"
+                        aria-label="youtube xxxxxxx">
+                        <svg class="svg-inline--fa fa-3x social-link-icon" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512">
                             <path
                                 d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
                             </path>
@@ -198,7 +215,6 @@
                 </div>
             </div>
         </section>
-
         
         
 
@@ -207,8 +223,8 @@
         <nav class="footer-nav">
             <a href="index.html">Inicio</a>
             <a href="index.html#contacto">Contacto</a>
-            <a href="index.html#quienes_somos">¿Quiénes somos?</a>
-            <a href="terminos.html">Terminos y Condiciones</a>
+            <a id="qs" href="index.html#quienes_somos">¿Quiénes somos?</a>
+            <a id="tc" href="terminos.html">Terminos y Condiciones</a>
         </nav>
     </div>
 
@@ -268,9 +284,11 @@
 </div>
 
     <!-- Scripts JS de la página -->
-<script src="./assets/js/slideshow.js"></script>
-<script src="./assets/js/quienes_somos.js"></script>
-
+    <script src="./assets/js/slides.js"></script>
+    <script src="./assets/js/quienes_somos.js"></script>
+    <script src="./assets/js/validar_form.js"></script>
+    
+    
 </body>
 
 </html>

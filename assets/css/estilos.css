@@ -11,8 +11,8 @@
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100,
-      "YTLC" 500;
+        "wdth" 100,
+        "YTLC" 500;
 }
 
 .m-plus-rounded-1c-regular {
@@ -33,8 +33,9 @@ p {
 }
 
 hr {
-    background:rgb(45,139,3);
+    background: rgb(45, 139, 3);
 }
+
 /*---------------------------------------------------------------*/
 /* Estilos del header */
 header {
@@ -50,9 +51,21 @@ header {
 }
 
 /*Div logo*/
-#logo {
+/*#logo {
     display: inline-block;
     padding: 10px 10px 0px 0px;
+}*/
+
+#logo:hover {
+    animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
 }
 
 /*Div Texto de la Marca*/
@@ -68,7 +81,7 @@ header {
     font-style: normal;
     font-weight: 800;
     font-size: 3rem;
-    
+
 }
 
 .span2 {
@@ -76,24 +89,25 @@ header {
     font-weight: 400;
     font-style: italic;
     white-space: nowrap;
-    }
+}
 
 
 .texto {
     line-height: 80%;
-    margin: 0; /* asegurar que no haya margen entre el texto y el borde inferior */
+    margin: 0;
+    /* asegurar que no haya margen entre el texto y el borde inferior */
 }
 
 /*Div Estilos del nav */
 nav {
     display: inline-block;
-    background:rgb(45,139,3);
+    background: rgb(45, 139, 3);
     font-weight: 700;
     padding: 10px;
-    
+
     text-align: center;
     border-radius: 10px;
-    
+
 }
 
 nav a {
@@ -107,6 +121,9 @@ nav a:hover {
     color: #ffff00;
 }
 
+#qs {
+    white-space: nowrap;
+}
 /*---------------------------------------------------------------*/
 /*MAIN*/
 /*Cuerpo Principal*/
@@ -116,20 +133,21 @@ main {
 }
 
 main section {
-    
-    padding: 15px 15px 0 0 ;   
+
+    padding: 15px 15px 0 0;
 }
 
-main section h2, main section h3 {
+main section h2,
+main section h3 {
     text-align: center;
     padding: 5px 0;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-/*Barra de separación*/ 
-.maintopmargin{
+/*Barra de separación*/
+.maintopmargin {
     height: 10px;
-    background-color:rgb(45,139,3);
+    background-color: rgb(45, 139, 3);
     margin: 0px 0px 15px 0px;
 }
 
@@ -145,93 +163,102 @@ main h1 {
 #productos {
     text-decoration: none;
 }
+
 /* SlideShow*/
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  box-sizing:border-box
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -239,35 +266,42 @@ main h1 {
 
 .contenedor-quienes {
     display: grid;
-    grid-template-columns: 15% 70% 15%; /* Define los tamaños de las columnas */
-    grid-gap: 10px; /* Espacio entre las celdas */
-    border: 0px solid black; /* Borde para visualización */
+    grid-template-columns: 15% 70% 15%;
+    /* Define los tamaños de las columnas */
+    grid-gap: 10px;
+    /* Espacio entre las celdas */
+    border: 0px solid black;
+    /* Borde para visualización */
     justify-content: center;
-  }
-  
-  .item-quienes {
-    border: 0px solid black; /* Borde para visualización */
-    padding: 10px; /* Espacio interno */
-  }
-  
-  /* Estilos adicionales para hacer más visible */
-  .item-quienes:nth-child(odd) {
-    background-color: rgb(255, 255, 255); /* Fondo para visualización */
-  }
+}
+
+.item-quienes {
+    border: 0px solid black;
+    /* Borde para visualización */
+    padding: 10px;
+    /* Espacio interno */
+}
+
+/* Estilos adicionales para hacer más visible */
+.item-quienes:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+    /* Fondo para visualización */
+}
 
 
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*Sección de Donde Estamos*/
 
-#mapa  {
+.contenedormapa {
     text-align: center;
-    
+
 }
+
 main iframe {
-    border: 10px solid rgb(45,139,3);
+    border: 10px solid rgb(45, 139, 3);
     padding: 10px;
-    
+
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -283,9 +317,10 @@ main iframe {
     font-size: inherit;
     height: 1em;
     overflow: visible;
-    vertical-align: -.125em
+    vertical-align: -.125em;
 }
 
+/*Formulario de contacto recuadro*/
 /*Form contacto
 #contacto form {
     padding: 20px;
@@ -293,21 +328,15 @@ main iframe {
 
 .form-wrapper {
     display: flex;
-    max-width: 50vw;
+    max-width: 680px;
     flex-direction: column;
     justify-content: center;
     text-align: left;
     margin: auto;
     border-radius: 5px;
-    padding: 0px 40px 10px;
+    padding: 10px 40px 10px;
     /*background:rgb(31, 56, 34);*/
-    background:rgb(45,139,3);
-}
-
-.form-wrapper span {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
+    background: rgb(45, 139, 3);
 }
 
 .form-wrapper h4 {
@@ -325,83 +354,6 @@ form .form-control {
     margin-top: 10px;
 }
 
-.form-control input {
-    width: 100%;
-    background: rgba(255,255,255,0.5);
-    border: 1px solid white;
-    outline: none;
-    border-radius: 5px;
-    color: #000;
-    padding: 5px;
-    margin-top: 10px;
-    content: 10px;
-}
-
-.form-control label {
-    pointer-events: none;
-    color: #8c8c8c;
-    transition: all 0.1s ease;
-}
-
-form .form-tel {
-    display:flex;
-    margin-top: 10px;
-}
-
-.form-tel input {
-    width: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid white;
-    outline: none;
-    border-radius: 5px;
-    color: #000;
-    margin: 0px 20px 0px 0px;
-} 
-
-.form-control input::placeholder, .form-tel input::placeholder {
-    /*color: rgb(34, 105, 2);*/
-    color: rgb(5, 27, 2); /* Color texto input verdes*/
-}
-
-.form-tel label {
-    pointer-events: none;
-    color: #ffffff;
-    transition: all 0.1s ease;
-}
-
-.form-tel radio {
-    pointer-events: none;
-    color: #8c8c8c;
-    transition: all 0.1s ease;
-    padding: 10px;
-}
-
-.form-botones textarea {
-    width: 100%;
-    /*pointer-events: none;*/
-    color: #8c8c8c;
-    /*transition: all 0.1s ease;*/
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 10px;
-}
-
-.form-botones input {
-    width: 50%;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid white;
-    outline: none;
-    border-radius: 5px;
-    color: #fff;
-    padding: 5px;
-    margin-top: 10px;
-}
-
-.form-botones input:hover {
-    background-color: #036f19;
-    color: white;
-}
-
 @media (max-width: 740px) {
     body::before {
         display: none;
@@ -413,7 +365,7 @@ form .form-tel {
         width: 100%;
         top: 50%;
     }
-    
+
     .form-wrapper form {
         margin: 5px 0 65px;
     }
@@ -431,7 +383,7 @@ form .form-tel {
     border-radius: 50%;
     box-sizing: border-box;
     font-size: 1em;
-    
+
 }
 
 .svg-inline--fa {
@@ -456,22 +408,25 @@ footer {
 
 footer section {
     /*background-color: #dff0f8;*/
-    padding: 15px 15px 0 0 ;
+    padding: 15px 15px 0 0;
 }
 
 footer section div img {
-    border-radius: 25% ;
+    border-radius: 25%;
 }
 
 .footer-nav {
     /* background-color: #3d7508;  Color del logo */
-    background:rgb(45,139,3);
+    background: rgb(45, 139, 3);
     font-weight: 700;
     padding: 10px;
     width: 100%;
     text-align: center;
 }
 
+#tc {
+    white-space: nowrap;
+}
 
 /*---------------------------------------------------------------*/
 /* terminos.html - Terminos y Condiciones */
@@ -480,70 +435,85 @@ footer section div img {
     background-color: #ffffff;
     padding: 20px;
     font-family: 'Nunito Sans', sans-serif;
-    
+
 }
 
 .terminos span {
     color: #3d7508;
     font-weight: bold;
-    padding : 10px;
+    padding: 10px;
 }
 
 .terminos p {
-    color:black ;
+    color: black;
     text-align: justify;
-    padding : 10px;
+    padding: 10px;
 }
 
-  
+
 
 /*---------------------------------------------------------------*/
 /*ïcono WHATSAPP Flotante*/
 #whatsapp-icon {
 
     position: fixed;
-    
-    bottom: 25px; /* Ajusta la posición vertical según tus necesidades */
-    
-    right: 20px; /* Ajusta la posición horizontal según tus necesidades */
-    
+
+    bottom: 25px;
+    /* Ajusta la posición vertical según tus necesidades */
+
+    right: 20px;
+    /* Ajusta la posición horizontal según tus necesidades */
+
     z-index: 1000;
-    
-    }
-    
+
+}
+
 #whatsapp-icon img {
-    
-    width: 70px; /* Ajusta el tamaño del icono según tus necesidades */
-    
+
+    width: 70px;
+    /* Ajusta el tamaño del icono según tus necesidades */
+
     height: auto;
-    
-    border-radius: 25%; /* Hace que el icono tenga forma circular */
-    
-    }
+
+    border-radius: 25%;
+    /* Hace que el icono tenga forma circular */
+
+}
 
 /*---------------------------------------------------------------*/
 /*hojaR.html*/
 
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
 
 
 .grid-productos {
     display: grid;
     grid-template-areas:
-    'header header header header header header'
-    'menu main main main main right'
-    'menu main main main main right';
+        'header header header header header header'
+        'menu main main main main right'
+        'menu main main main main right';
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
     max-width: 100%;
 }
 
-.grid-productos > div {
+.grid-productos>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
