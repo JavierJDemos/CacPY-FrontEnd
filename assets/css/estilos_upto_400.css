@@ -25,6 +25,7 @@
 body {
     background-color: #dff8f4;
     color: #3d7508;
+    font-size: 1em;
 }
 
 p {
@@ -40,22 +41,18 @@ hr {
 /* Estilos del header */
 header {
     background-color: #fff;
-    padding: 0 15px 5px 0;
 }
 
 /* Estilos del container-header */
 .container-header {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 10px;
+    
 }
 
-/*Div logo*/
-/*#logo {
-    display: inline-block;
-    padding: 10px 10px 0px 0px;
-}*/
-
+/*Div Estilos del logo*/
 #logo:hover {
     animation: tilt-n-move-shaking 0.25s infinite;
 }
@@ -68,56 +65,42 @@ header {
     100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-/*Div Texto de la Marca*/
+/*Div Estilos del Texto de la Marca*/
 .flex-titulo {
-    line-height: 100%;
-    flex: 1;
-    padding: 10px 10px 0px 0px;
-}
-
-.span1 {
-    font-family: "M PLUS Rounded 1c";
-    font-weight: xx-large;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 3rem;
-
-}
-
-.span2 {
-    font-family: "M PLUS Rounded 1c";
-    font-weight: 400;
-    font-style: italic;
-    white-space: nowrap;
+    display: none;
+    
 }
 
 
-.texto {
-    line-height: 80%;
-    margin: 0;
-    /* asegurar que no haya margen entre el texto y el borde inferior */
-}
 
 /*Div Estilos del nav */
-nav {
-    display: inline-block;
+.flex-nav {
+    display: flex;
+    justify-content: center; /* Distribuye los elementos de manera uniforme */
     background: rgb(45, 139, 3);
-    font-weight: 700;
-    padding: 10px;
-
-    text-align: center;
-    border-radius: 10px;
-
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    border-radius: 0px;
 }
 
-nav a {
+.flex-nav nav {
+    background: rgb(45, 139, 3);
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    
+        
+}
+
+.flex-nav nav a {
     text-decoration: none;
     color: #ffffff;
-    padding: 15px;
+    padding: 0px 0px;
 }
 
-nav a:hover {
-    text-decoration: underline blue;
+.flex-nav nav a:hover {
     color: #ffff00;
 }
 
@@ -156,6 +139,7 @@ main section h3 {
 main h1 {
     color: #3d7508;
     text-align: center;
+    text-size-adjust: 1 em;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -305,7 +289,7 @@ main h1 {
     display: grid;
     grid-template-columns: 5% 90% 5%;
     /* Define los tamaños de las columnas */
-    grid-gap: 10px;
+    grid-gap: 1px;
     /* Espacio entre las celdas */
     border: 0px solid black;
     /* Borde para visualización */
@@ -315,7 +299,7 @@ main h1 {
 .item-mapa {
     border: 0px solid black;
     /* Borde para visualización */
-    padding: 10px;
+    padding: 8px;
     /* Espacio interno */
 }
 
@@ -328,8 +312,8 @@ main h1 {
 .iframemapa {
     border: 10px solid rgb(45, 139, 3);
     padding: 10px;
-    width: 100vh; /* Mapa ocupa todo el ancho del contenedor */
-    height: 75vh;  /*Altura igual al 80% del ancho ocupado */
+    width: 40vh; /* Mapa ocupa todo el ancho del contenedor */
+    height: 30vh;  /*Altura igual al 80% del ancho ocupado */
     max-height: 600px; /* Altura máxima para que no sea demasiado grande */
 }
 
@@ -363,7 +347,7 @@ main h1 {
     text-align: left;
     margin: auto;
     border-radius: 5px;
-    padding: 10px 40px 10px;
+    padding: 10px 25px 10px;
     /*background:rgb(31, 56, 34);*/
     background: rgb(45, 139, 3);
 }
@@ -380,7 +364,7 @@ main h1 {
 form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(223, 248, 212);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -401,7 +385,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 form textarea {
@@ -425,7 +409,7 @@ input[type="checkbox"] {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 0.87em;
 }
 
 input[type="submit"]:hover,
@@ -433,14 +417,14 @@ input[type="reset"]:hover,
 input[type="checkbox"]:hover {
     background-color: rgb(194, 242, 172);
     font-weight: bold;
-    border: 2px solid;
+    border: 1px solid;
     color: #000000;
     border-color: rgb(45, 139, 3);
 }
 
 .error-message {
     color: red;
-    font-size: 14px;
+    font-size: 0.87em;
     margin-top: 5px;
 }
 
@@ -457,7 +441,7 @@ input[type="checkbox"]:hover {
     }
 
     .form-wrapper form {
-        margin: 5px 0 65px;
+        margin: 5px 0 5px;
     }
 }
 
@@ -489,6 +473,45 @@ input[type="checkbox"]:hover {
 }
 
 /*---------------------------------------------------------------*/
+/*Div Estilos del Footer Nav */
+.footer-nav {
+    display: flex;
+    justify-content: center; /* Distribuye los elementos de manera uniforme */
+    background: rgb(45, 139, 3);
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    border-radius: 0px;
+}
+
+.footer-nav nav {
+    background: rgb(45, 139, 3);
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0px 0px;
+}
+
+.footer-nav nav a:hover {
+    color: #ffff00;
+}
+
+#qsf {
+    white-space: nowrap;
+}
+
+#tcf {
+    white-space: nowrap;
+}
+
+
+/*---------------------------------------------------------------*/
 /*FOOTER*/
 footer {
     background-color: #aaff3c80;
@@ -505,18 +528,7 @@ footer section div img {
     border-radius: 25%;
 }
 
-.footer-nav {
-    /* background-color: #3d7508;  Color del logo */
-    background: rgb(45, 139, 3);
-    font-weight: 700;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-}
 
-#tc {
-    white-space: nowrap;
-}
 
 /*---------------------------------------------------------------*/
 /* terminos.html - Terminos y Condiciones */
@@ -548,10 +560,10 @@ footer section div img {
 
     position: fixed;
 
-    bottom: 25px;
+    bottom: 5px;
     /* Ajusta la posición vertical según tus necesidades */
 
-    right: 20px;
+    right: 10px;
     /* Ajusta la posición horizontal según tus necesidades */
 
     z-index: 1000;
@@ -560,7 +572,7 @@ footer section div img {
 
 #whatsapp-icon img {
 
-    width: 70px;
+    width: 40px;
     /* Ajusta el tamaño del icono según tus necesidades */
 
     height: auto;
