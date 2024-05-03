@@ -8,7 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/estilos.css">
+        <!-- link rel="stylesheet" href="./assets/css/estilos.css" -->
+    <!-- Hoja de estilo para pantallas hasta 370px de ancho -->
+    <link rel="stylesheet" href="./assets/css/estilos_upto_400.css" media="screen and (max-width: 400px)">
+
+    <!-- Hoja de estilo para pantallas hasta 768px de ancho -->
+    <link rel="stylesheet" href="./assets/css/estilos_upto_768.css" media="screen and (min-width: 401px) and (max-width: 768px)">
+
+    <!-- Hoja de estilo para pantallas hasta 1024px de ancho -->
+    <link rel="stylesheet" href="./assets/css/estilos_upto_1024.css" media="screen and (min-width: 769px) and (max-width: 1024px)">
+
+    <!-- Hoja de estilo por defecto para pantallas mayores a 1024px de ancho -->
+    <link rel="stylesheet" href="./assets/css/estilos.css" media="screen and (min-width: 1025px)">
+    <!-- link rel="stylesheet" href="./assets/css/estilos_form.css" -->
     <link rel="shortcut icon" href="./assets/img/logo-ST-T.png" type="image/png">
     <!-- Stylesheet temporal para mostrar grid de fotos-->
     <link rel="stylesheet" href="./assets/css/grid.css">
@@ -17,7 +29,7 @@
 <body class="nunito-sans-700">
     <header>
         <div class="container-header">
-            <div >
+            <div id="logo">
                 <a href="index.html"><img src="./assets/img/logo-ST-T.png" height="120" alt="Logo"></a>
             </div>
             <div class="flex-titulo">
@@ -28,13 +40,13 @@
                     <span  class="texto"> e l e c t r o d o m é s t i c o s</span>    
                 </div>
             </div>
-            <div>
-              <nav>
-                <a href="index.html">Inicio</a>
-                <a href="productos.html">Productos</a>
-                <a href="index.html#contacto">Contacto</a>
-                <a href="index.html#quienes_somos">Quiénes somos</a>
-            </nav>
+            <div class="flex-nav">
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="index.html#contacto">Contacto</a>
+                    <a id="qs" href="index.html#quienes_somos">Quiénes somos</a>
+                </nav>
             </div>
         </div>
     </header>
@@ -88,12 +100,12 @@
         
 
     </main>
-    <div>
-        <nav class="footer-nav">
+    <div class="footer-nav">
+        <nav>
             <a href="index.html">Inicio</a>
             <a href="index.html#contacto">Contacto</a>
-            <a href="index.html#quienes_somos">¿Quiénes somos?</a>
-            <a href="terminos.html">Terminos y Condiciones</a>
+            <a id="qsf" href="index.html#quienes_somos">¿Quiénes somos?</a>
+            <a id="tcf" href="terminos.html">Terminos y Condiciones</a>
         </nav>
     </div>
 

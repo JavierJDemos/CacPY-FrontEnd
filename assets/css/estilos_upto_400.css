@@ -280,27 +280,46 @@ main h1 {
 .dondemapa {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
+    /*align-items: center; /* Centra los elementos horizontalmente */
     justify-content: center; /* Centra los elementos verticalmente */
-    padding: auto;
+    padding: 0;
+    
 }
 
 .contenedormapa {
     display: grid;
     grid-template-columns: 5% 90% 5%;
     /* Define los tamaños de las columnas */
-    grid-gap: 1px;
+    grid-gap: 00px;
     /* Espacio entre las celdas */
     border: 0px solid black;
     /* Borde para visualización */
-    justify-content: center;
+    justify-items: center;
+    
+}
+
+.item-mapai {
+    border: 0px solid black;
+    /* Borde para visualización */
+    padding: 0px;
+    /* Espacio interno */
+    
 }
 
 .item-mapa {
     border: 0px solid black;
     /* Borde para visualización */
-    padding: 8px;
+    padding: 10px;
     /* Espacio interno */
+    
+}
+
+.item-mapad {
+    border: 0px solid black;
+    /* Borde para visualización */
+    padding: 0px;
+    /* Espacio interno */
+    
 }
 
 /* Estilos adicionales para hacer más visible */
@@ -311,9 +330,10 @@ main h1 {
 
 .iframemapa {
     border: 10px solid rgb(45, 139, 3);
-    padding: 10px;
+    padding: 3px;
     width: 40vh; /* Mapa ocupa todo el ancho del contenedor */
     height: 30vh;  /*Altura igual al 80% del ancho ocupado */
+    
     max-height: 600px; /* Altura máxima para que no sea demasiado grande */
 }
 
