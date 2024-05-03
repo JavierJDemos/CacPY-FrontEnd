@@ -55,7 +55,7 @@ header {
 
 /*Div Estilos del logo*/
 #logo {
-    width: 20%; /* Cada uno ocupa la mitad del contenedor */
+    width: auto; /* Cada uno ocupa la mitad del contenedor */
     box-sizing: border-box; /* Incluye el padding y border en el ancho */
     padding: 10px; /* Añade un poco de espacio interno */
 }
@@ -105,9 +105,10 @@ header {
 /*Div Estilos del nav */
 .flex-nav {
     display: flex;
+    justify-self:flex-end;
     justify-content: center; /* Distribuye los elementos de manera uniforme */
     background: rgb(45, 139, 3);
-    width: 20%; /* Ocupa el ancho completo del contenedor */
+    width: auto; /* Ocupa el ancho completo del contenedor */
     border-radius: 0px;
 }
 

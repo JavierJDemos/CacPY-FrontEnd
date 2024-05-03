@@ -55,7 +55,7 @@ header {
 
 /*Div Estilos del logo*/
 #logo {
-    width: 15%; /* Cada uno ocupa la mitad del contenedor */
+    width: auto; /* Cada uno ocupa un porcentaje del ancho del contenedor y se adaptará  */
     box-sizing: border-box; /* Incluye el padding y border en el ancho */
     padding: 10px; /* Añade un poco de espacio interno */
 }
@@ -74,7 +74,7 @@ header {
 
 /*Div Estilos del Texto de la Marca*/
 .flex-titulo {
-    width: 85%; /* Cada uno ocupa la mitad del contenedor */
+    width: auto; /* Cada uno ocupa la mitad del contenedor */
     box-sizing: border-box; /* Incluye el padding y border en el ancho */
     padding: 10px; /* Añade un poco de espacio interno */
     display: flex;
