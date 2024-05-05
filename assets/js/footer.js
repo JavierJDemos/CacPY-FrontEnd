@@ -41,7 +41,7 @@ let data = [
         tarjeta: "visadebit"
     }]
 
-texto = `
+let texto = `
     <h4>Aceptamos estos medios de pago</h4>
     <br>
     <div>
