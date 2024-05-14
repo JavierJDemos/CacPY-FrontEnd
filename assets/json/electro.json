@@ -1,0 +1,142 @@
+[
+    {
+        "Foto": "./assets/img/Productos/1licuadora.jpg",
+        "id": 1,
+        "Nombre": "Licuadora",
+        "Marca": "Atma",
+        "Descripcion": "Jarra plastica, 1,5 lts"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/22216-large_default/aspen-balanza-de-cocina-ek3052-2kgcod3434-499007400.jpg",
+        "id": 2,
+        "Nombre": "Balanza",
+        "Marca": "Aspen",
+        "Descripcion": "de cocina, digital"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/31721-large_default/daihatsu-aspiradora-industrial-asp-15-1200-15lt-1200w.jpg",
+        "id": 3,
+        "Nombre": "Aspiradora",
+        "Marca": "Daihatsu",
+        "Descripcion": "20 lts, 1200 w"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/29528-large_default/ariston-heladera-tre44ab-bm-freezer-inverter-397lts-blanca-01603818.jpg",
+        "id": 4,
+        "Nombre": "Heladera",
+        "Marca": "Ariston",
+        "Descripcion": "Inverter, 397 lts"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/17600-large_default/candy-lavarropas-aut-vita-smart-cst68d-superior-6kg-800-rpm-blanco.jpg",
+        "id": 5,
+        "Nombre": "Lavarropas",
+        "Marca": "Candy",
+        "Descripcion": "Smart, 6 kg, 800 RPM"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/40002-large_default/alaska-acondicionador-de-aire-split-as26wccs-2322frig-frio-calor.jpg",
+        "id": 6,
+        "Nombre": "Aire acondicionado",
+        "Marca": "Alaska",
+        "Descripcion": "Split frio-calor"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/15976-large_default/smartlife-plancha-sl-sic2326-iron-2000w-suela-de-ceramica.jpg",
+        "id": 7,
+        "Nombre": "Plancha",
+        "Marca": "Smartlife",
+        "Descripcion": "2000 w, suela de ceramica"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/44059-large_default/singer-maquina-de-coser-c-7255.jpg",
+        "id": 8,
+        "Nombre": "Maquina de coser",
+        "Marca": "Singer",
+        "Descripcion": "Pantalla LCD"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/42304-large_default/atma-batidora-planetaria-bp-at21rp-roja.jpg",
+        "id": 9,
+        "Nombre": "Batidora",
+        "Marca": "Atma",
+        "Descripcion": "4 lts, 800 w"
+    },
+    {
+        "Foto": "./assets/img/Productos/10Cafetera.jpg",
+        "id": 10,
+        "Nombre": "Cafetera",
+        "Marca": "Canji",
+        "Descripcion": "Multicapsula, 0.7 lts"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/28233-large_default/atma-exprimidor-ex8220n-02103307.jpg",
+        "id": 11,
+        "Nombre": "Exprimidor",
+        "Marca": "Atma",
+        "Descripcion": "Electrico, 1 litro"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/35860-large_default/midea-freidora-afd140bar1-air-fryer-4lt-negra-digital.jpg",
+        "id": 12,
+        "Nombre": "Freidora",
+        "Marca": "Midea",
+        "Descripcion": "4 litros, 200°c"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/28170-large_default/liliana-multiprocesadora-am740-megapros-color-blanco-740w-198060111.jpg",
+        "id": 13,
+        "Nombre": "Multiprocesadora",
+        "Marca": "Liliana",
+        "Descripcion": "Cuchilla de acero, 2 velocidades"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/45405-large_default/liliana-tostadora-aat924-multislice-3-fun-7-niveles.jpg",
+        "id": 14,
+        "Nombre": "Tostadora",
+        "Marca": "Liliana",
+        "Descripcion": "7 niveles de tostadas, 4 bocas grandes"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/35347-large_default/peabody-fabricadora-de-waffles-wm-186.jpg",
+        "id": 15,
+        "Nombre": "Fabricadora de waffles",
+        "Marca": "Peabody",
+        "Descripcion": "1000 w de potencia, 5 porciones"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/25152-large_default/yelmo-fabricadora-de-helados-fh-3300-40203911.jpg",
+        "id": 16,
+        "Nombre": "Fabricadora de helados",
+        "Marca": "Yelmo",
+        "Descripcion": "Soportes anti-deslizantes, 1,5 lts"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/42955-large_default/peabody-licuadora-de-mano-lm-322r-600w-roja.jpg",
+        "id": 17,
+        "Nombre": "Licuadora de mano",
+        "Marca": "Peabody",
+        "Descripcion": "600 w, motor silencioso"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/16877-large_default/coppens-calefactor-peltre-ii-2500c-tb-c25bdpam-058016712.jpg",
+        "id": 18,
+        "Nombre": "Calefactor",
+        "Marca": "Coppens",
+        "Descripcion": "Tiraje TBU, calorias 2500"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/42437-large_default/drean-lavavajillas-mdish-152-dtx-15-cubiertos-inox.jpg",
+        "id": 19,
+        "Nombre": "Lavavajillas",
+        "Marca": "Drean",
+        "Descripcion": "Lavado programables 1-23 hs, digital"
+    },
+    {
+        "Foto": "https://76338a6a.flyingcdn.com/37768-large_default/koh-i-noor-secarropas-centrifugo-55kg-a-6552-crecipiente-acero.jpg",
+        "id": 20,
+        "Nombre": "Secarropas",
+        "Marca": "Kohinor",
+        "Descripcion": "Tambor de acero inoxidable, capacidad 5,5 lts"
+    }
+]
