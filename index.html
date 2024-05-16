@@ -30,26 +30,8 @@
 
 <body class="nunito-sans-700">
     <header>
-        <div class="container-header">
-            <div id="logo">
-                <a href="index.html"><img src="./assets/img/logo-ST-T.png" height="120" alt="Logo"></a>
-            </div>
-            <div class="flex-titulo">
-                <div class="span1">
-                    <span class="texto">Extralife</span>
-                </div>
-                <div class="span2">
-                    <span class="texto"> e l e c t r o d o m é s t i c o s</span>
-                </div>
-            </div>
-            <div class="flex-nav">
-                <nav>
-                    <a href="index.html">Inicio</a>
-                    <a href="productos.html">Productos</a>
-                    <a href="index.html#contacto">Contacto</a>
-                    <a id="qs" href="index.html#quienes_somos">Quiénes somos</a>
-                </nav>
-            </div>
+        <!-- Header desde JS -->
+        <div class="container-header" id="header">
         </div>
     </header>
 
@@ -107,7 +89,7 @@
 
         <hr>
 
-        <!-- Quines somos -->
+        <!-- Quines somos desde JS-->
         <section class="quienes_somos">
             <h2>¿Quiénes Somos?</h2>
             <div class="contenedor-quienes">
@@ -165,44 +147,13 @@
                 </div>
                 <br>
 
-                <!-- Formulario de contacto -->
-                <div class="form-wrapper">
-                    <form name="RegForm" onsubmit="return validateForm()">
-                        <h3>Formulario de consulta</h3>
-                        <p>
-                            <label for="name">Nombre:</label>
-                            <input type="text" id="name" name="Name" placeholder="Ingrese su nombre completo">
-                            <span id="name-error" class="error-message"></span>
-                        </p>
-                        <p>
-                            <label for="email">Correo electrónico:</label>
-                            <input type="text" id="email" name="EMail" placeholder="Ingrese su email">
-                            <span id="email-error" class="error-message"></span>
-                        </p>
-                        <p>
-                            <label for="tel">Teléfono:</label>
-                            <input type="tel" id="tel" name="Teléfono" placeholder="Ingrese su teléfono">
-                            <span id="tel-error" class="error-message"></span>
-                        </p>
-                        <p>
-                            <label for="comment">Mensaje</label>
-                            <textarea id="comment" name="Comment"></textarea>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="agree" name="Agree">
-                            <label for="agree">He leído y acepto toda la información</label>
-                            <span id="agree-error" class="error-message"></span>
-                        </p>
-                        <br>
-                        <p>
-                            <input type="submit" value="Enviar" name="Submit">
-                            <input type="reset" value="Cancelar" name="Reset">
-                        </p>
-                    </form>
+                <!-- Formulario de contacto desde JS-->
+                <div class="form-wrapper" id="form-contacto">
                 </div>
                 <!-- Fin form contacto-->
                 <br>
                 <br>
+
                 <h2>Nuestras redes Sociales</h2>
                 <div>
                     <!-- <a class="social-link" href="https://instagram.com/xxxxxxx" target="_blank"
@@ -213,8 +164,8 @@
                             </path>
                         </svg>
                     </a> -->
-                    <a class="social-link" href="https://www.facebook.com/profile.php?id=100064128847910" target="_blank"
-                        aria-label="facebook xxxxxxx">
+                    <a class="social-link" href="https://www.facebook.com/profile.php?id=100064128847910"
+                        target="_blank" aria-label="facebook xxxxxxx">
                         <svg class="svg-inline--fa fa-3x " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512">
                             <path
                                 d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229">
@@ -235,15 +186,11 @@
         </section>
 
     </main>
-    
+
     <footer>
-        <div class="footer-nav">
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="index.html#contacto">Contacto</a>
-                <a id="qsf" href="index.html#quienes_somos">¿Quiénes somos?</a>
-                <a id="tcf" href="terminos.html">Terminos y Condiciones</a>
-            </nav>
+        <!--  desde JS -->
+        <!-- Nav del footer-->
+        <div class="footer-nav" id="nav-footer">
         </div>
         <!-- Medios de pago -->
         <section id="medios_pago">
@@ -253,18 +200,19 @@
         </div>
     </footer>
 
-    <!-- Logo flotante WhatsApp -->
-    <div id="whatsapp-icon">
-        <a href="https://wa.me/+5491155174331" target="_blank" title="Chatea con nosotros por WhatsApp">
-            <img src="./assets/img/logoWaSaP.png" alt="Icono de WhatsApp">
-        </a>
+    <!-- Logo flotante WhatsApp desde JS-->
+    <div id="whatsapp-icon">        
     </div>
 
     <!-- Scripts JS de la página -->
+    <script src="./assets/js/header.js"></script>
     <script src="./assets/js/slides.js"></script>
     <script src="./assets/js/quienes_somos.js"></script>
+    <script src="./assets/js/form-contacto.js"></script>
     <script src="./assets/js/validar_form.js"></script>
     <script src="./assets/js/footer.js"></script>
+    <script src="./assets/js/wa.js"></script>
 
 </body>
+
 </html>
