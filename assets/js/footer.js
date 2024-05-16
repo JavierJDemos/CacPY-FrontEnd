@@ -1,3 +1,12 @@
+let nav_pie = `
+    <nav>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#contacto">Contacto</a>
+    <a id="qsf" href="index.html#quienes_somos">¿Quiénes somos?</a>
+    <a id="tcf" href="terminos.html">Terminos y Condiciones</a>
+    </nav>
+`
+
 let data = [
     {
         imagen: "./assets/img/visa@2x.png",
@@ -54,8 +63,6 @@ for (let tarj of data) {
     `
 }
 
-document.querySelector("#medios_pago").innerHTML = texto+"</div><br>"
-
 let pie = `
     <div>
     <span>Copyright Extralife electrodomésticos - 2024. Todos los derechos reservados.</span>
@@ -67,4 +74,7 @@ let pie = `
     </div>
     <br>
 `
+
+document.querySelector("#nav-footer").innerHTML = nav_pie
+document.querySelector("#medios_pago").innerHTML = texto+"</div><br>"
 document.querySelector("#pie").innerHTML = pie
