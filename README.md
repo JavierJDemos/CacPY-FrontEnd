@@ -1,6 +1,6 @@
 # CacPY-FrontEnd
 
-## Curso intensivos Codo a Codo
+## Curso intensivo Codo a Codo
 FullStack Python
 Comsión 24177
 1er Cuatrimestre 2024
