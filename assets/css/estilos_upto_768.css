@@ -634,77 +634,23 @@ footer section div img {
 }
 
 /*---------------------------------------------------------------*/
-/*hojaR.html*/
+/*productos.html*/
 
 
-.item1 {
-    grid-area: header;
+.container-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.item2 {
-    grid-area: menu;
+.tarjeta-productos {
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
-.item3 {
-    grid-area: main;
-}
-
-.item4 {
-    grid-area: right;
-}
-
-
-.grid-productos {
-    display: grid;
-    grid-template-areas:
-        'header header header header header header'
-        'menu main main main main right'
-        'menu main main main main right';
-    gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-    max-width: 100%;
-}
-
-.grid-productos>div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}
-
-/*Nav productos HojaR*/
-.menuproductos ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menuproductos ul li {
-    position: relative;
-}
-
-.menuproductos ul li a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #333;
-}
-
-.menuproductos ul ul {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: #fff;
-    border: 1px solid #ccc;
-}
-
-.menuproductos ul ul li {
-    display: block;
-}
-
-.menuproductos ul li:hover > ul {
-    display: block;
+.tarjeta-productos img {
+    width: 100%;
 }
 
