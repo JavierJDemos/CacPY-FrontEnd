@@ -42,27 +42,10 @@
         </div>
         <h1>Renovamos electrodomésticos y cuidamos el planeta</h1>
         <div class="productos">
-            <style>
-                .container {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-evenly;
-                }
-
-                .tarjeta {
-                    width: 200px;
-                    border: 1px solid black;
-                    border-radius: 10px;
-                    margin-top: 10px;
-                }
-
-                .tarjeta img {
-                    width: 100%;
-                }
-            </style>
+            
             <div id="app">
-                <div class="container">
-                    <div v-for="elemento in datos" class="tarjeta">
+                <div class="container-productos">
+                    <div v-for="elemento in datos" class="tarjeta-productos">
                         <div class="cuerpo">
                             <img width="200" v-bind:src="elemento.Foto" alt="elemento.Foto">
                             <p>Producto: {{elemento.Nombre}}</p>
@@ -82,8 +65,8 @@
         <div class="footer-nav" id="nav-footer">
         </div>
         <!-- Medios de pago -->
-        <section id="medios_pago">
-        </section>
+        <div id="medios_pago">
+        </div>
         <!-- Pie -->
         <div id="pie">
         </div>
