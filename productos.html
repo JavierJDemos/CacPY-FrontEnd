@@ -41,12 +41,13 @@
         <div class="maintopmargin">
         </div>
         <h1>Renovamos electrodomésticos y cuidamos el planeta</h1>
-        <div class="productos">
+        <div id="app">
             
-            <div id="app">
+            
                 <div class="container-productos">
-                    <div v-for="elemento in datos" class="tarjeta-productos">
-                        <div class="cuerpo">
+                    
+                    <div class="tarjeta-productos" v-for="elemento in datos">
+                        <div  >
                             <img width="200" v-bind:src="elemento.Foto" alt="elemento.Foto">
                             <p>Producto: {{elemento.Nombre}}</p>
                             <p>Marca: {{elemento.Marca}}</p>
@@ -54,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
             <br>
         </div>
     </main>
