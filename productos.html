@@ -42,15 +42,14 @@
         </div>
         <h1>Renovamos electrodomésticos y cuidamos el planeta</h1>
         <div class="productos">
-            
             <div id="app">
                 <div class="container-productos">
-                    <div v-for="elemento in datos" class="tarjeta-productos">
-                        <div class="cuerpo">
-                            <img width="200" v-bind:src="elemento.Foto" alt="elemento.Foto">
+                    <div v-for="elemento in datos" v-bind:key="elemento.id">
+                        <div class="tarjeta-productos">
+                            <img width="200" v-bind:src="elemento.Foto" alt="Foto del producto">
                             <p>Producto: {{elemento.Nombre}}</p>
                             <p>Marca: {{elemento.Marca}}</p>
-                            <p>Descripcion del producto: {{elemento.Descripcion}}</p>
+                            <p>Descripción del producto: {{elemento.Descripcion}}</p>
                         </div>
                     </div>
                 </div>
