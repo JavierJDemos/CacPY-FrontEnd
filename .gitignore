@@ -1,4 +1,6 @@
 *.docx
 .vscode/
+*.7z
+*.zip
 BaseNuevaHoja.html
 HojaR.html
