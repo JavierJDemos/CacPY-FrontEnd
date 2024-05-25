@@ -13,8 +13,11 @@ Comsión 24177
 
 #### Proyecto: Extralife
 Extralife es un emprendimiento que tiene como objetivo darle una segunda oportunidad a los productos que por algún motivo no son considerados para ofrecerse al mercado como de primera calidad.
-Para este proyecto diseñamos un sitio que se divide en dos portes, una más simple donde se brinda información de la empresa y otra donde se desarrolla el e-commerce.
-(En desarrollo)
+
+Para este proyecto diseñamos un sitio que se divide en dos portes. Una primer parte más simple donde se brinda información de la empresa y una segunda donde se desarrolla el e-commerce. Todo considerando que el propietario no tiene conocimiento alguno sobre desarrollo y mantenimiento de sitios.
+En todo el sitio se busco generar una estructura donde se permitiera ver de forma apropiada a diferentes resoluciones de pantalla, en cualquier dispositivo, sin importar si la misma se usa de forma vertical u horizaontal.
+En la primer parte hay contenido que es estático, como el mapa y el formulario y otro que está pensado para poder cambiarse sin tener que editar las páginas html como lo son la sección "Quienes Somos?" y los "Terminos y Condiciones de uso del sitio". Estos se pueden cambiar mediante un archivo json, fácil de editar para el propietario.
+En la segunda parte se cumplió con el objetivo del propietario donde solo quiere exhibir productos, se utilizo VUE y un archivo Json (fácil de editar) para desplegar rápidamente los mismos. Si bién se ajusta a nuestro proyecto, permite el desarrollo de un backend pensando en transformarlo en una plataforma de e-commerce.
 
 
 [Repositorio del proyecto publico](https://github.com/JavierJDemos/CacPY-FrontEnd)  
