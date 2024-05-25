@@ -3,7 +3,7 @@ let nav_pie = `
     <a href="index.html">Inicio</a>
     <a href="index.html#contacto">Contacto</a>
     <a id="qsf" href="index.html#quienes_somos">¿Quiénes somos?</a>
-    <a id="tcf" href="terminos.html">Terminos y Condiciones</a>
+    <a id="tcf" href="terminos.html">Términos y Condiciones</a>
     </nav>
 `
 
