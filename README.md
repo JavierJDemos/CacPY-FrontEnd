@@ -25,3 +25,5 @@ En la segunda parte se cumplió con el objetivo del propietario donde solo quier
 * [Repositorio del proyecto público](https://github.com/JavierJDemos/CacPY-FrontEnd)  
 
 * [Visualización del proyecto](https://javierjdemos.github.io/CacPY-FrontEnd/)  
+
+* [Seguimiento de requisitos del Trabajo Práctico](https://docs.google.com/spreadsheets/d/1-7qlR6TERhLNxYONVvpnwGF2yvDvK442T81CBtVlCuE/edit#gid=291141343)
